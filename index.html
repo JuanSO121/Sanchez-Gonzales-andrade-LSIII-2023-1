@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AutoMaquila</title>
+  <title>EventMaster</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400&display=swap" rel="stylesheet">
@@ -12,18 +12,287 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <style>
+    section.gallery {
+      display: flex;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      height: 430px; 
+      overflow: hidden;
+    }
 
+    section.gallery img {
+      width: 0px;
+      flex-grow: 1;
+      object-fit: cover;
+      opacity: .9;
+      transition: .5s ease;
+    }
 
-  <body class="bg-[#09090F] text-[#FFFFFF]">
+    section.gallery img:hover {
+      cursor: crosshair;
+      width: 300px;
+      opacity: 1;
+      filter: contrast(150%);
+    }
+  </style>
 
-    <!-- P1 - header - Juan Jose Sanchez -->
+<body class="bg-[#09090F] text-[#FFFFFF]">
 
-
-    <!-- P2 Body -->
-
-
+  <div class="flex flex-col items-center p-4 box-sizing-border w-full">
+    <div class="bg-[#09090F] flex flex-col items-center p-[96px_24px_96px_24px] box-sizing-border">
+      <div class="m-[0_1.3px_14px_0] flex flex-col items-center w-[fit-content] box-sizing-border">
+        <div class="m-[0_3.3px_24px_0] flex flex-col items-center w-[fit-content] box-sizing-border">
+          
+          <div class="m-[0_0_64px_17.4px] flex flex-col items-center w-[fit-content] box-sizing-border">
+            <div class="m-[0_28.3px_24px_0] flex flex-col items-center w-[fit-content] box-sizing-border">
+              <span class="break-words font-['Inter'] font-semibold text-[35.6px] leading-[1.236] text-[#F7F7F8]">
+                Planificación de Eventos
+              </span>
+              <span class="m-[0_0_0_7.6px] break-words font-['Inter'] font-semibold text-[35.6px] leading-[1.236] text-[#7A15FF]">
+                Simplificada
+              </span>
+            </div>
+            <div class="flex flex-col items-center w-[fit-content] box-sizing-border">
+              <span class="break-words font-['Inter'] font-normal text-[15.4px] leading-[1.558] text-[#94989E]">
+                Organiza eventos increíbles sin esfuerzo con nuestra herramienta dinámica. Colabora sin problemas y
+              </span>
+              <span class="m-[0_7.1px_0_0] break-words font-['Inter'] font-normal text-[15.4px] leading-[1.558] text-[#94989E]">
+                visualiza todas tus ideas en tiempo real con nuestras herramientas intuitivas.
+              </span>
+            </div>
+          </div>
   
-  </body>
+          <span class="break-words font-['Inter'] font-semibold text-[35.6px] leading-[1.236] text-[#F7F7F8]">
+            Nuestros Procesos
+          </span>
+          <span class="m-[0_0_0_1.2px] break-words font-['Inter'] font-semibold text-[35.6px] leading-[1.236] text-[#BC86FF]">
+            Eficientes
+          </span>
+        </div>
+        <div class="m-[0_0_0_17.7px] flex flex-col items-center w-[fit-content] box-sizing-border mb-12">
+          <span class="break-words font-['Inter'] font-normal text-[15.4px] leading-[1.558] text-[#94989E]">
+            Explora nuestras herramientas esenciales para una planificación de eventos sin problemas. Eleva
+          </span>
+          <span class="m-[0_56.5px_0_53.4px] break-words font-['Inter'] font-normal text-[15.4px] leading-[1.558] text-[#94989E]">
+            tu experiencia de organización con características intuitivas y capacidades poderosas.
+          </span>
+        </div>
+            
+            <!-- Sección de servicios -->
+  
+            <span class="break-words font-['Inter'] font-semibold text-[35.6px] leading-[1.236] text-[#F7F7F8]">
+              Nuestros Servicios</br></br>
+            </span>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-gray-900">Planificación de Eventos</h3>
+                  <p class="text-gray-900">
+                  </br>Creamos planes personalizados para cualquier tipo de evento.
+                  </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-gray-900">Gestión de Invitados</h3>
+                  <p class="text-gray-900"></br>Gestionamos listas de invitados y envíos de invitaciones.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-gray-900">Decoración</h3>
+                  <p class="text-gray-700"></br>Ofrecemos servicios completos de decoración para eventos.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-gray-900">Catering</h3>
+                  <p class="text-gray-700"></br>Proveemos opciones de catering personalizadas para cada evento.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-gray-900">Entretenimiento</h3>
+                  <p class="text-gray-700"></br>Organizamos una variedad de opciones de entretenimiento para tus eventos.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                  <h3 class="text-gray-900">Logística</h3>
+                  <p class="text-gray-700"></br>Manejamos todos los aspectos logísticos para garantizar el éxito de tu evento.</p>
+                </div>
+              </div>
+  
+              <!-- Sección de galería interactiva -->
+            <span class="break-words font-['Inter'] font-semibold text-[35.6px] leading-[1.236] text-[#F7F7F8] mt-12">
+              Galería de Eventos</br></br>
+            </span>
+            <section class="gallery mt-8">
+              <img src="uploads/imagen 1.jpg" alt="Imagen 1">
+              <img src="uploads/imagen 2.jpg" alt="Imagen 2">
+              <img src="uploads/imagen 3.jpg" alt="Imagen 3">
+              <img src="uploads/imagen 4.jpg" alt="Imagen 4">
+              <img src="uploads/imagen 5.jpg" alt="Imagen 5">
+              <img src="uploads/imagen 6.jpg" alt="Imagen 6">
+            </section>
+    
+  <section class="flex flex-col items-center p-4 w-full bg-[#09090F] text-white">
+    <span class="break-words font-['Inter'] font-semibold text-[35.6px] leading-[1.236] text-[#F7F7F8]">
+    </br></br>Comentarios</br>
+    </span>
+    <div class="carousel">
+      <!-- Carousel items -->
+    </div>
+  
+    <!-- Comentarios Section -->
+    <div class="comments-section w-full mt-8">
+      <center>
+            <form id="commentForm" class="w-full max-w-lg">
+        <div class="mb-4">
+          <label for="name" class="block text-sm font-bold mb-2">Nombre:</label>
+          <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+        </div>
+        <div class="mb-4">
+          <label for="comment" class="block text-sm font-bold mb-2">Comentario:</label>
+          <textarea id="comment" name="comment" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required></textarea>
+        </div>
+        <div class="mb-4">
+          <button type="submit" class="bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Enviar</button>
+        </div>
+      </form>
+      
+      <div id="commentsList" class="w-full max-w-lg mt-8">
+        <!-- Aquí se mostrarán los comentarios -->
+      </div>
+  
+      </center>
+    </div>
+  </section>
+  
+  <script>
+    document.getElementById('commentForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('name').value;
+      const comment = document.getElementById('comment').value;
+      
+      const commentContainer = document.createElement('div');
+      commentContainer.classList.add('comment', 'mb-4', 'p-4', 'bg-gray-800', 'rounded');
+      
+      const commentName = document.createElement('h3');
+      commentName.classList.add('text-lg', 'font-semibold');
+      commentName.textContent = name;
+      
+      const commentText = document.createElement('p');
+      commentText.classList.add('mt-2');
+      commentText.textContent = comment;
+      
+      const deleteButton = document.createElement('button');
+      deleteButton.classList.add('bg-red-500', 'hover:bg-red-700', 'text-white', 'font-bold', 'py-1', 'px-2', 'rounded', 'mt-2');
+      deleteButton.textContent = 'Eliminar';
+      deleteButton.addEventListener('click', function() {
+        commentContainer.remove();
+      });
+  
+      commentContainer.appendChild(commentName);
+      commentContainer.appendChild(commentText);
+      commentContainer.appendChild(deleteButton);
+  
+      document.getElementById('commentsList').appendChild(commentContainer);
+      
+      document.getElementById('commentForm').reset();
+    });
+  </script>
+
+  <!-- Sección de Acerca de Nosotros -->
+<section class="flex flex-col items-center p-4 w-full bg-[#09090F] text-white">
+  <span class="break-words font-['Inter'] font-semibold text-[35.6px] leading-[1.236] text-[#F7F7F8]">
+    Acerca de Nosotros
+  </span>
+  <div class="w-full max-w-lg mt-8 text-center"> <!-- Agregamos la clase text-center aquí -->
+    <p class="text-gray-400 mb-4">
+      En EventMaster, nos apasiona la planificación de eventos excepcionales. Desde nuestro inicio, hemos estado comprometidos con la misión de simplificar el proceso de organización de eventos y ofrecer experiencias memorables a nuestros clientes.</br></br>
+    </p>
+    <p class="text-gray-400 mb-4">
+      Nuestra visión es convertirnos en el referente líder en la industria de eventos, ofreciendo soluciones innovadoras y servicios de alta calidad que superen las expectativas de nuestros clientes.</br></br>
+    </p>
+    <p class="text-gray-400 mb-4">
+      En EventMaster, nos guían valores de integridad, profesionalismo y excelencia. Nos esforzamos por mantener relaciones sólidas con nuestros clientes, colaboradores y socios, basadas en la confianza y el respeto mutuo.</br>
+    </p>
+  </div>
+</section>
+
+<!-- Sección de Formulario de Contacto -->
+<section class="flex flex-col items-center p-4 w-full bg-[#09090F] text-white">
+  <span class="break-words font-['Inter'] font-semibold text-[35.6px] leading-[1.236] text-[#F7F7F8]">
+    Contactanos
+  </span>
+  <div class="w-full max-w-lg mt-8">
+    <form id="contactForm" class="w-full" action="#" method="POST">
+      <div class="mb-4">
+        <label for="name" class="block text-sm font-bold mb-2 text-gray-400">Nombre:</label>
+        <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-bold mb-2 text-gray-400">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+      </div>
+      <div class="mb-4">
+        <label for="message" class="block text-sm font-bold mb-2 text-gray-400">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required></textarea>
+      </div>
+      <div class="mb-4">
+        <button type="submit" class="bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Enviar</button>
+      </div>
+      <!-- Aquí colocamos el mensaje de éxito junto al formulario -->
+      <div id="successMessage" class="hidden bg-green-500 text-white py-2 px-4 rounded mt-4">Su mensaje fue enviado con éxito</div>
+    </form>
+  </div>
+</section>
+
+<!-- Script para mostrar el mensaje de éxito -->
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Mostrar el mensaje de éxito
+    document.getElementById('successMessage').classList.remove('hidden');
+    
+    // Opcional: Ocultar el mensaje después de un tiempo
+    setTimeout(function() {
+      document.getElementById('successMessage').classList.add('hidden');
+    }, 3000); // 3000 milisegundos = 3 segundos
+  });
+</script>
+
+<!-- Sección de suscripción al boletín -->
+<section class="flex flex-col items-center p-4 w-full bg-[#09090F] text-white">
+  <span class="break-words font-['Inter'] font-semibold text-[35.6px] leading-[1.236] text-[#F7F7F8]">Suscríbete a nuestro boletín</span>
+  <form id="newsletterForm" class="w-full max-w-lg mt-8">
+    <p class="text-center text-gray-400 mb-4">
+      Suscríbete a nuestro boletín para recibir las últimas noticias, promociones exclusivas y actualizaciones sobre nuestros eventos y servicios.
+    </p>
+    <div class="mb-4">
+      <label for="email" class="block text-sm font-bold mb-2 text-gray-400">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+    </div>
+    <div class="mb-4">
+      <button type="submit" class="bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Suscribirse</button>
+    </div>
+    <!-- Aquí colocamos el mensaje de éxito junto al formulario -->
+    <div id="newsletterMessage" class="hidden bg-green-500 text-white py-2 px-4 rounded mt-4">Gracias por suscribirte a nuestro boletín</div>
+  </form>
+</section>
+
+<script>
+  document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Mostrar el mensaje de éxito
+    document.getElementById('newsletterMessage').classList.remove('hidden');
+    
+    // Opcional: Ocultar el mensaje después de un tiempo
+    setTimeout(function() {
+      document.getElementById('newsletterMessage').classList.add('hidden');
+    }, 3000); // 3000 milisegundos = 3 segundos
+  });
+</script>
+          </div>
+        </div>
+      </div>
+    </div>
+    </body>
 
   <!-- P3 Footer -->
 <footer class="bg-[#09090F] text-white py-8">
