@@ -194,6 +194,100 @@
       document.getElementById('commentForm').reset();
     });
   </script>
+
+  <!-- Sección de Acerca de Nosotros -->
+<section class="flex flex-col items-center p-4 w-full bg-[#09090F] text-white">
+  <span class="break-words font-['Inter'] font-semibold text-[35.6px] leading-[1.236] text-[#F7F7F8]">
+    Acerca de Nosotros
+  </span>
+  <div class="w-full max-w-lg mt-8 text-center"> <!-- Agregamos la clase text-center aquí -->
+    <p class="text-gray-400 mb-4">
+      En EventMaster, nos apasiona la planificación de eventos excepcionales. Desde nuestro inicio, hemos estado comprometidos con la misión de simplificar el proceso de organización de eventos y ofrecer experiencias memorables a nuestros clientes.</br></br>
+    </p>
+    <p class="text-gray-400 mb-4">
+      Nuestra visión es convertirnos en el referente líder en la industria de eventos, ofreciendo soluciones innovadoras y servicios de alta calidad que superen las expectativas de nuestros clientes.</br></br>
+    </p>
+    <p class="text-gray-400 mb-4">
+      En EventMaster, nos guían valores de integridad, profesionalismo y excelencia. Nos esforzamos por mantener relaciones sólidas con nuestros clientes, colaboradores y socios, basadas en la confianza y el respeto mutuo.</br>
+    </p>
+  </div>
+</section>
+
+<!-- Sección de Formulario de Contacto -->
+<section class="flex flex-col items-center p-4 w-full bg-[#09090F] text-white">
+  <span class="break-words font-['Inter'] font-semibold text-[35.6px] leading-[1.236] text-[#F7F7F8]">
+    Contactanos
+  </span>
+  <div class="w-full max-w-lg mt-8">
+    <form id="contactForm" class="w-full" action="#" method="POST">
+      <div class="mb-4">
+        <label for="name" class="block text-sm font-bold mb-2 text-gray-400">Nombre:</label>
+        <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-bold mb-2 text-gray-400">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+      </div>
+      <div class="mb-4">
+        <label for="message" class="block text-sm font-bold mb-2 text-gray-400">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required></textarea>
+      </div>
+      <div class="mb-4">
+        <button type="submit" class="bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Enviar</button>
+      </div>
+      <!-- Aquí colocamos el mensaje de éxito junto al formulario -->
+      <div id="successMessage" class="hidden bg-green-500 text-white py-2 px-4 rounded mt-4">Su mensaje fue enviado con éxito</div>
+    </form>
+  </div>
+</section>
+
+<!-- Script para mostrar el mensaje de éxito -->
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Mostrar el mensaje de éxito
+    document.getElementById('successMessage').classList.remove('hidden');
+    
+    // Opcional: Ocultar el mensaje después de un tiempo
+    setTimeout(function() {
+      document.getElementById('successMessage').classList.add('hidden');
+    }, 3000); // 3000 milisegundos = 3 segundos
+  });
+</script>
+
+<!-- Sección de suscripción al boletín -->
+<section class="flex flex-col items-center p-4 w-full bg-[#09090F] text-white">
+  <span class="break-words font-['Inter'] font-semibold text-[35.6px] leading-[1.236] text-[#F7F7F8]">Suscríbete a nuestro boletín</span>
+  <form id="newsletterForm" class="w-full max-w-lg mt-8">
+    <p class="text-center text-gray-400 mb-4">
+      Suscríbete a nuestro boletín para recibir las últimas noticias, promociones exclusivas y actualizaciones sobre nuestros eventos y servicios.
+    </p>
+    <div class="mb-4">
+      <label for="email" class="block text-sm font-bold mb-2 text-gray-400">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+    </div>
+    <div class="mb-4">
+      <button type="submit" class="bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Suscribirse</button>
+    </div>
+    <!-- Aquí colocamos el mensaje de éxito junto al formulario -->
+    <div id="newsletterMessage" class="hidden bg-green-500 text-white py-2 px-4 rounded mt-4">Gracias por suscribirte a nuestro boletín</div>
+  </form>
+</section>
+
+<script>
+  document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Mostrar el mensaje de éxito
+    document.getElementById('newsletterMessage').classList.remove('hidden');
+    
+    // Opcional: Ocultar el mensaje después de un tiempo
+    setTimeout(function() {
+      document.getElementById('newsletterMessage').classList.add('hidden');
+    }, 3000); // 3000 milisegundos = 3 segundos
+  });
+</script>
           </div>
         </div>
       </div>
