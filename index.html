@@ -37,6 +37,10 @@
       opacity: 1;
       filter: contrast(150%);
     }
+
+    html {
+      scroll-behavior: smooth;
+    }
   </style>
 
   <body class="bg-[#09090F] text-[#FFFFFF]">
@@ -50,50 +54,51 @@
           
           <ul>
               <li class="list active">
-                  <a href="#">
+                  <a href="#home">
                       <span class="icon">
                           <ion-icon name="home-outline"></ion-icon>
                       </span>
-                      <span class="text">Home</span>
+                      <span class="text">Inicio</span>
                       <span class="circle"></span>
                   </a>
               </li>
               <li class="list">
-                  <a href="#">
+                  <a href="#about">
                       <span class="icon">
                           <ion-icon name="person-outline"></ion-icon>
                       </span>
-                      <span class="text">Profile</span>
+                      <span class="text">Sobre Nosotros</span>
                       <span class="circle"></span>
                   </a>
               </li>
               <li class="list">
-                  <a href="#">
+                  <a href="#comentarios">
                       <span class="icon">
                           <ion-icon name="chatbubble-outline"></ion-icon>
                       </span>
-                      <span class="text">Message</span>
+                      <span class="text">Comentarios</span>
                       <span class="circle"></span>
                   </a>
               </li>
               <li class="list">
-                  <a href="#">
+                  <a href="#galeria">
                       <span class="icon">
                           <ion-icon name="camera-outline"></ion-icon>
                       </span>
-                      <span class="text">Photos</span>
+                      <span class="text">Galeria</span>
                       <span class="circle"></span>
                   </a>
               </li>
               <li class="list">
-                  <a href="#">
-                      <span class="icon">
-                          <ion-icon name="settings-outline"></ion-icon>
-                      </span>
-                      <span class="text">Settings</span>
-                      <span class="circle"></span>
-                  </a>
+                <a href="#contacto">
+                    <span class="icon">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </span>
+                    <span class="text">Contactanos</span>
+                    <span class="circle"></span>
+                </a>
               </li>
+            
               <div class="indicator"></div>
           </ul>
       </div>
@@ -102,7 +107,7 @@
 
     <!-- P2 Body -->
 
-    <div class="bg-[#09090F] flex flex-col items-center p-[96px_24px_96px_24px] box-sizing-border">
+    <div id="home" class="bg-[#09090F] flex flex-col items-center p-[96px_24px_96px_24px] box-sizing-border">
       <div class="m-[0_1.3px_14px_0] flex flex-col items-center w-[fit-content] box-sizing-border">
         <div class="m-[0_3.3px_24px_0] flex flex-col items-center w-[fit-content] box-sizing-border">
           
@@ -176,7 +181,7 @@
               </div>
   
               <!-- Sección de galería interactiva -->
-            <span class="break-words font-['Inter'] font-semibold text-[35.6px] leading-[1.236] text-[#F7F7F8] mt-12">
+            <span id="galeria" class="break-words font-['Inter'] font-semibold text-[35.6px] leading-[1.236] text-[#F7F7F8] mt-12">
               Galería de Eventos</br></br>
             </span>
             <section class="gallery mt-8">
@@ -188,7 +193,7 @@
               <img src="uploads/imagen 6.jpg" alt="Imagen 6">
             </section>
     
-  <section class="flex flex-col items-center p-4 w-full bg-[#09090F] text-white">
+  <section id="comentarios" class="flex flex-col items-center p-4 w-full bg-[#09090F] text-white">
     <span class="break-words font-['Inter'] font-semibold text-[35.6px] leading-[1.236] text-[#F7F7F8]">
     </br></br>Comentarios</br>
     </span>
@@ -257,7 +262,7 @@
   </script>
 
   <!-- Sección de Acerca de Nosotros -->
-<section class="flex flex-col items-center p-4 w-full bg-[#09090F] text-white">
+<section id="about" class="flex flex-col items-center p-4 w-full bg-[#09090F] text-white">
   <span class="break-words font-['Inter'] font-semibold text-[35.6px] leading-[1.236] text-[#F7F7F8]">
     Acerca de Nosotros
   </span>
@@ -275,7 +280,7 @@
 </section>
 
 <!-- Sección de Formulario de Contacto -->
-<section class="flex flex-col items-center p-4 w-full bg-[#09090F] text-white">
+<section id="contacto" class="flex flex-col items-center p-4 w-full bg-[#09090F] text-white">
   <span class="break-words font-['Inter'] font-semibold text-[35.6px] leading-[1.236] text-[#F7F7F8]">
     Contactanos
   </span>
