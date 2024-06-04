@@ -4,13 +4,14 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AutoMaquila</title>
+  <title>EventMaster</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="uploads/style.css">
 
 
 
@@ -19,37 +20,67 @@
     <!-- P1 - header - Juan Jose Sanchez -->
     <header class="flex flex-col items-center w-full p-4">
 
- 
-      <div class="shadow-md rounded-3xl bg-[rgba(11,11,17,0.914)] mb-12 flex flex-row justify-between p-4 md:p-6 lg:w-3/4 w-full">
-        
-        <!-- Logo y título -->
-        <div class="flex flex-row items-center">
-          <div class="rounded-[10px] bg-[url('uploads/logo.png')] bg-[50%_50%] bg-cover bg-no-repeat w-[101px] h-[94px] ml-4"></div>
-          <div class="inline-block font-['Oleo_Script'] text-2xl md:text-3xl text-white">AutoMaquila</div>
-        </div>
+      <div class=" mb-12 center center-row">
 
-        <!-- Menú de navegación -->
-        <div class="flex flex-row justify-between items-center w-full max-w-lg">
-          <a href="/" class="break-words font-['Montserrat'] font-medium text-[18px] text-[#C1C1C1] bg-transparent border-none cursor-pointer focus:outline-none px-4 py-2 rounded hover:bg-purple-600 hover:text-white {{ 'index' in request.path and 'bg-black text-white rounded-full' or '' }}">
-            Inicio
-          </a>
-          <a href="Opcion_1" class="break-words font-['Montserrat'] font-medium text-[18px] text-[#C1C1C1] bg-transparent border-none cursor-pointer focus:outline-none px-4 py-2 rounded hover:bg-purple-600 hover:text-white {{ 'Opcion_1' in request.path and 'bg-black text-white rounded-full' or '' }}">
-            Opcion_1
-          </a>
-          <a href="Opcion_2" class="break-words font-['Montserrat'] font-medium text-[18px] text-[#C1C1C1] bg-transparent border-none cursor-pointer focus:outline-none px-4 py-2 rounded hover:bg-purple-600 hover:text-white {{ 'Opcion_2' in request.path and 'bg-black text-white rounded-full' or '' }}">
-            Opcion_2
-          </a>
-          <a href="Opcion_3" class="break-words font-['Montserrat'] font-medium text-[18px] text-[#C1C1C1] bg-transparent border-none cursor-pointer focus:outline-none px-4 py-2 rounded hover:bg-purple-600 hover:text-white {{ 'Opcion_3' in request.path and 'bg-black text-white rounded-full' or '' }}">
-            Opcion_3
-          </a>
-        </div>
+        <div class="navigation  center">
+          
+          <ul>
+              <li class="list active">
+                  <a href="#">
+                      <span class="icon">
+                          <ion-icon name="home-outline"></ion-icon>
+                      </span>
+                      <span class="text">Home</span>
+                      <span class="circle"></span>
+                  </a>
+              </li>
+              <li class="list">
+                  <a href="#">
+                      <span class="icon">
+                          <ion-icon name="person-outline"></ion-icon>
+                      </span>
+                      <span class="text">Profile</span>
+                      <span class="circle"></span>
+                  </a>
+              </li>
+              <li class="list">
+                  <a href="#">
+                      <span class="icon">
+                          <ion-icon name="chatbubble-outline"></ion-icon>
+                      </span>
+                      <span class="text">Message</span>
+                      <span class="circle"></span>
+                  </a>
+              </li>
+              <li class="list">
+                  <a href="#">
+                      <span class="icon">
+                          <ion-icon name="camera-outline"></ion-icon>
+                      </span>
+                      <span class="text">Photos</span>
+                      <span class="circle"></span>
+                  </a>
+              </li>
+              <li class="list">
+                  <a href="#">
+                      <span class="icon">
+                          <ion-icon name="settings-outline"></ion-icon>
+                      </span>
+                      <span class="text">Settings</span>
+                      <span class="circle"></span>
+                  </a>
+              </li>
+              <div class="indicator"></div>
+          </ul>
       </div>
+    </div>
     </header>
 
     <!-- P2 Body -->
 
-
-  
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="uploads/script.js"></script>
   </body>
 
   <!-- P3 Footer -->
