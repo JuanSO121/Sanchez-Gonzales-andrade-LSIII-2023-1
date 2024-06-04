@@ -11,8 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <style>
+  <link rel="stylesheet" href="uploads/style.css">
+  
+    <style>
     section.gallery {
       display: flex;
       width: 100%;
@@ -38,8 +39,68 @@
     }
   </style>
 
-<body class="bg-[#09090F] text-[#FFFFFF]">
+  <body class="bg-[#09090F] text-[#FFFFFF]">
 
+    <!-- P1 - header - Juan Jose Sanchez -->
+    <header class="flex flex-col items-center w-full p-4">
+
+      <div class=" mb-12 center center-row">
+
+        <div class="navigation  center">
+          
+          <ul>
+              <li class="list active">
+                  <a href="#">
+                      <span class="icon">
+                          <ion-icon name="home-outline"></ion-icon>
+                      </span>
+                      <span class="text">Home</span>
+                      <span class="circle"></span>
+                  </a>
+              </li>
+              <li class="list">
+                  <a href="#">
+                      <span class="icon">
+                          <ion-icon name="person-outline"></ion-icon>
+                      </span>
+                      <span class="text">Profile</span>
+                      <span class="circle"></span>
+                  </a>
+              </li>
+              <li class="list">
+                  <a href="#">
+                      <span class="icon">
+                          <ion-icon name="chatbubble-outline"></ion-icon>
+                      </span>
+                      <span class="text">Message</span>
+                      <span class="circle"></span>
+                  </a>
+              </li>
+              <li class="list">
+                  <a href="#">
+                      <span class="icon">
+                          <ion-icon name="camera-outline"></ion-icon>
+                      </span>
+                      <span class="text">Photos</span>
+                      <span class="circle"></span>
+                  </a>
+              </li>
+              <li class="list">
+                  <a href="#">
+                      <span class="icon">
+                          <ion-icon name="settings-outline"></ion-icon>
+                      </span>
+                      <span class="text">Settings</span>
+                      <span class="circle"></span>
+                  </a>
+              </li>
+              <div class="indicator"></div>
+          </ul>
+      </div>
+    </div>
+    </header>
+
+    <!-- P2 Body -->
   <div class="flex flex-col items-center p-4 box-sizing-border w-full">
     <div class="bg-[#09090F] flex flex-col items-center p-[96px_24px_96px_24px] box-sizing-border">
       <div class="m-[0_1.3px_14px_0] flex flex-col items-center w-[fit-content] box-sizing-border">
@@ -340,5 +401,8 @@
 
 <!-- Font Awesome Icons -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="uploads/script.js"></script>
 
 </html>
